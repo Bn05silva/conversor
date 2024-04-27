@@ -18,7 +18,7 @@ celciusInput.addEventListener('input', function(){
 
 fahrenheitInput.addEventListener('input', function(){
     let fTemp = parseFloat(fahrenheitInput.value)
-    let cTemp = (fTemp - 32) + (5/9)
+    let cTemp = (fTemp - 32) * (5/9)
 
     celciusInput.value = roundNumber(cTemp)
 
